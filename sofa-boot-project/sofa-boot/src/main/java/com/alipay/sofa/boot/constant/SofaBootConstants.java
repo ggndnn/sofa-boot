@@ -25,7 +25,7 @@ package com.alipay.sofa.boot.constant;
 public class SofaBootConstants {
 
     /***
-     * 获取应用名: 备注 @Value("${spring.application.name:@null}")
+     * fetch: commment @Value("${spring.application.name:@null}")
      */
     public static final String  APP_NAME_KEY                                    = "spring.application.name";
 

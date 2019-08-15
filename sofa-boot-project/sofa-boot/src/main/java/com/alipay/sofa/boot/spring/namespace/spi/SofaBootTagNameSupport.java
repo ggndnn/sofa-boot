@@ -26,9 +26,9 @@ package com.alipay.sofa.boot.spring.namespace.spi;
 public interface SofaBootTagNameSupport {
 
     /**
-     * 获取支持的 TagName
+     * fetch supported TagName
      *
-     * @return 支持的 TagName
+     * @return supported TagName
      */
     String supportTagName();
 }

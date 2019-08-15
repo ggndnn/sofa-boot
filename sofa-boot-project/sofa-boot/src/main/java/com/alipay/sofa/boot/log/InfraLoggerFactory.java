@@ -29,10 +29,10 @@ public class InfraLoggerFactory {
     public static final String INFRASTRUCTURE_LOG_SPACE = "com.alipay.sofa.infra";
 
     /***
-     * 获取日志对象
+     * fetch logger object
      *
-     * @param clazz 日志的名字
-     * @return 日志实现
+     * @param clazz logger class name
+     * @return logger impl
      */
     public static Logger getLogger(Class<?> clazz) {
         if (clazz == null) {
@@ -41,14 +41,14 @@ public class InfraLoggerFactory {
         return getLogger(clazz.getCanonicalName());
     }
 
-    /**
-     * 获取日志对象
+    /***
+     * fetch logger object
      *
-     * @param name 日志的名字
-     * @return 日志实现
+     * @param name logger name
+     * @return logger impl
      */
     public static Logger getLogger(String name) {
-        //从 "com/alipay/sofa/infra/log" 中获取 infra 的日志配置并寻找对应logger对象,log 为默认添加的后缀
+        // com/alipay/sofa/infra/log fetch logger object
         if (name == null || name.isEmpty()) {
             return null;
         }
