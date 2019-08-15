@@ -491,6 +491,24 @@
                     </plugin>
                 </plugins>
             </build>
+            <repositories>
+                <repository>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                    <id>maven-snapshot</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                    <id>maven-snapshot</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+                </pluginRepository>
+            </pluginRepositories>
             <distributionManagement>
                 <snapshotRepository>
                     <id>ossrh</id>
