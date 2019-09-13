@@ -38,6 +38,11 @@
         </dependency>
 
         <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>hessian</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>aopalliance</groupId>
             <artifactId>aopalliance</artifactId>
             <version>1.0</version>
@@ -94,6 +99,9 @@
                                     <class>com.alipay.sofa.runtime.SofaRuntimeProperties</class>
                                     <class>com.alipay.sofa.runtime.service.binding.JvmBindingParam</class>
                                     <class>com.alipay.sofa.runtime.spi.service.ServiceProxy</class>
+                                    <class>com.alipay.sofa.runtime.spi.spring.RuntimeShutdownAware</class>
+                                    <class>com.alipay.sofa.runtime.invoke.DynamicJvmServiceProxyFinder</class>
+                                    <class>com.alipay.sofa.runtime.SofaEventHandler</class>
                                 </classes>
                             </exported>
 
